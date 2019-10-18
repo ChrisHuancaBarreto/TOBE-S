@@ -54,9 +54,7 @@ h1 {
     color:white;
     border-color: white;
 }
-#boton-buscador2{
-display: none;
-}
+
 
 /* buscador */ 
 
@@ -111,13 +109,9 @@ a:hover {
 
 /* nav-categorias */
 
-.nav{
-    display: flex;
-    border-bottom: 0px solid #aaa;
-    background : black; 
-    padding: 0px;
+#buscador_mobil{
+    display :none;
 }
-
 .nav .categorias a {
  color: white;
  padding:8px;
@@ -138,6 +132,7 @@ h2 {
     font-family: 'Permanent Marker', cursive;    
 }
 /* nav-categorias */
+
 
 
 
@@ -179,7 +174,13 @@ h5 {
     color: white;
 }
 
-/* fin fotter * /
+/* fin fotter */
+
+
+#nav-cel{
+    background: black;
+    color: white;
+}
 
 
 /* mediaQ */
@@ -187,14 +188,10 @@ h5 {
 @media screen and (max-width:768px){
     .redes , .buscador {
         display: none;
-        
     }
-    #boton-buscador2 {
-      display: inline;
-      color: white;
-      font-size: 2rem;
+    #buscador_mobil{
+        display :inline-block;
     }
-    
 
 }
 
@@ -202,31 +199,17 @@ h5 {
      .redes , .buscador {
         display: none;
     }
-    #boton-buscador2 {
-        display: inline;
-        color: white;
-        font-size: 1.5rem;
-      }
-    .nav {
-        display:none;
+    #buscador_mobil{
+        display :inline-block;
     }
+
 }
 
 @media screen and (max-width:400px){
-    .boton{
-       display: none;
-       
-   }
-   #boton-buscador2{
-    font-size: 1.5rem;
-   }
+    #sesion {
+        display:block;
+    }
 }
 
-@media screen and (max-width:275px){
-
-   #boton-buscador2{
-       display: none;
-   }
-}
 
 
