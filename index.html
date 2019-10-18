@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>MeXus</title>
+    <title>Tobe's</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -15,80 +15,161 @@
 
 </head>
 <body>
-<header class="header">
+
+
+<header class="header navbar sticky-top">
     <div class="logo">
         <a class="hvr-wobble-to-bottom-right" href="index.html"><h1>TOBE'S</h1></a>
-    </div>
+    </div>    
     <div class="buscador">
         <form class="form-inline my-2 my-lg-0">
             <input class="form-control mr-sm-2" type="search" placeholder="Buscar..." aria-label="Search">
             <button id="boton-buscador" class="btn btn-outline my-2 my-sm-0 hvr-grow-shadow" type="submit"><i class="fas fa-search"></i></button>
         </form>
     </div>
-    <div class="ingresar">
-          <!-- Button trigger modal -->
-          <button class="boton hvr-fade hvr-pulse-grow" type="button" data-toggle="modal" data-target="#login">
-            <h5><i class="fas fa-user"></i> Acceder</h5>
-          </button>
-          
-          <!-- Modal -->
-          <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="login" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="form">
+
+   <div class="dropdown">
+            <button class="dropdown-toggle ingresar hvr-bounce-in boton"  type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <h5><i class="fas fa-user"></i> Acceder</h5>
+            </button>
+            <div class="dropdown-menu" style="background: black;" aria-labelledby="dropdownMenuButton" >
+              <a class="dropdown-item" data-toggle="modal" data-target="#login" style="color: white;background: transparent;" href="#">Iniciar Sesion</a>
+              <a class="dropdown-item" style="color:white; background: transparent;" href="register.html">Registrarse</a>
+            </div>
+    </div>
+
+
+    <!-- LOGIN - MODAL -->
+
+    <div class="modal fade" tabindex="-1" role="dialog" id="login" aria-labelledby="login">
+            <div class="modal-dialog" role="document">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLongTitle">Iniciar Sesion</h5>
+                  <h5 class="modal-title" style="color:black">Iniciar Sesion</h5>
                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                   </button>
                 </div>
                 <div class="modal-body">
-                  <form>
-                      <div class="form-group">
-                        <label for="exampleInputEmail1">Email</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingrese su correo electronico">
-                      </div>
-                      <div class="form-group">
-                        <label for="exampleInputPassword1">Contraseña</label>
-                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Ingrese su contraseña">
-                      </div>
-                      <div class="form-group form-check">
-                        <input type="checkbox" class="form-check-input" id="_login">
-                        <label class="form-check-label" for="_login">Recordar</label>
-                      </div>
-                  </form>
-                  <a href="register.html">No esta Registrado?</a>
+            <form>
+            <div class="form-group">
+              <label for="email">Ingrese su correo</label>
+              <input type="email" class="form-control" id="email" placeholder="Ingrese su email..">
+            </div>
+            <div class="form-group">
+              <label for="pass">Contraseña</label>
+              <input type="password" class="form-control" id="pass" placeholder="contraseña..">
+            </div>
+            <div class="form-group form-check">
+              <input type="checkbox" class="form-check-input" id="recordar">
+              <label class="form-check-label" for="recordar">Recordar</label>
+            </div>
+          </form>
                 </div>
                 <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-                  <button type="submit" class="btn btn-primary">Entrar</button>
+                  <a href="login.html"><button type="submit" class="btn btn-success">Registrarse</button></a>
+                  <button type="submit" class="btn btn-primary">Ingresar</button>
                 </div>
               </div>
             </div>
-          </div>
-  </div>
+    </div>
+
+    <!-- LOGIN - MODAL -->
+
+
+  <button id="boton-buscador2" class="btn btn-outline my-2 my-sm-0 hvr-grow-shadow" type="submit"><i class="fas fa-search"></i></button>
     <div class="redes">
       <a href="#"><i class="fab fa-facebook hvr-float"></i></a>
       <a href="#"><i class="fab fa-twitter hvr-float"></i></a>
       <a href="#"><i class="fab fa-instagram hvr-float"></i></a>
+      <div style="color: white;font-size: 28px;">|</div>
+      <a href="#"><i class="fa fa-shopping-cart hvr-float"></i></a>
     </div>
 </header>
-<div class="nav">
+
+<nav class="nav">
     <div class="categorias">
-        <a class="hvr-float" href="#">Producto1</a>
-        <a class="hvr-float" href="#">Producto2</a>
-        <a class="hvr-float" href="#">Producto3</a>
-        <a class="hvr-float" href="#">Producto4</a>
-        <a class="hvr-float" href="#">Producto5</a>
-        <a class="hvr-float" href="#">Ver mas..</a>
+        <a class="hvr-float" href="productos.html">Computadoras</a>
+        <a class="hvr-float" href="productos.html">Consolas</a>
+        <a class="hvr-float" href="productos.html">Electrodomesticos</a>
+        <a class="hvr-float" href="productos.html">Celulares</a>
     </div>
+</nav>
+
+
+<main>
+  <div id="banner_bienvenida" class="carousel slide" data-ride="carousel" style="z-index:auto">
+        <ol class="carousel-indicators" style="z-index:auto;">
+          <li data-target="#banner_bienvenida" data-slide-to="0" class="active"></li>
+          <li data-target="#banner_bienvenida" data-slide-to="1"></li>
+          <li data-target="#banner_bienvenida" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div><img src="img/banner_2.jpg" class="d-block w-100" alt="banner_2"></div>
+          </div>
+          <div class="carousel-item">
+            <div><img src="img/banner_3.jpg" class="d-block w-100" alt="banner_3"></div>
+          </div>
+          <div class="carousel-item">
+            <div><img src="img/banner_4.jpg" class="d-block w-100" alt="banner_4"></div>
+          </div>
+          <div class="carousel-item">
+            <div><img src="img/banner_5.jpg" class="d-block w-100" alt="banner_5"></div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#banner_bienvenida" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#banner_bienvenida" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
 </div>
-   <section>
 
-   </section>
+</main>
 
-    <footer>
+<footer>
 
-    </footer>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-4" style="text-align: center;" > 
+              <h5>TOBE'S</h5>
+              <a href="nosotros.html#QuienesSomos">
+                    <p>Quienes Somos?</p>
+              </a>
+              <a href="nosotros.html#dondeEstamos">
+                  <p>Donde Estamos?</p>
+              </a>
+              <a href="nosotros.html#dondeEstamos">
+                    <p>Contacto</p>
+              </a>
+          </div>
+
+          <div class="col-md-4" >
+                <h5 class="title">Recibir Novedades</h5>
+                <form>
+                    <div class="form-group">
+                        <label for="email">Deje su correo: </label>
+                          <input type="email" class="form-control" id="email" placeholder="Ingrese su email">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>
+
+          </div>
+
+          <div class="col-md-4" >
+              <h5>Contacto</h5>
+                <p>MeXus</p>
+                <p><i class="fa fa-map-marker" aria-hidden="true"></i>  Calle falsa 1234</p>
+                <p>  unEmail@algo.com</p>
+                <p><i class="fa fa-phone" aria-hidden="true"></i>  +54 12345678</p>
+          </div>
+        </div>
+      </div>
+
+</footer>
     
 
 

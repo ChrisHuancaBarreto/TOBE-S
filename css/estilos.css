@@ -8,17 +8,21 @@
     text-decoration: none;
 }
 a {
-    text-decoration: none;
+    color: white;
 }
 
 /* FIN aplica a todo */ 
+
+/* header */
 
 .header{
     background: black;
     display: flex;
     justify-content: space-between;
-    
+    height: 100px;
 }
+
+/* logo */
 
 h1 {
     color: white;
@@ -31,12 +35,18 @@ h1 {
   flex: 1 1 auto;
   text-align: center;
   justify-content: center;
+  font-size: 2rem;
 }
+
+/* logo */
+
+/* buscador */ 
 
 .buscador{
   flex: 4 1 auto;
   display: flex;
   justify-content: center;
+  margin-top: -1.5%;
 }
 
 #boton-buscador{
@@ -44,23 +54,44 @@ h1 {
     color:white;
     border-color: white;
 }
+#boton-buscador2{
+display: none;
+}
+
+/* buscador */ 
+
+/* ingresar */ 
 
 .ingresar {
     display: flex;
     justify-content: center;
     align-items: center;
     flex: 2 1 auto;
-
 }
+
+.modal-backdrop {
+    position: relative;
+    display: none;
+}
+
 
 .boton {
     color: white;
     background-color: transparent;
     border-color: transparent;
 }
+
+a:hover {
+    text-decoration: none;
+    color:white
+}
 .boton:hover {
     background: transparent;
 }
+
+/* ingresar */ 
+
+/* redes sociales  */ 
 
 .redes {
     flex: 1 1 auto;
@@ -76,17 +107,113 @@ h1 {
     color: white;
 }
 
+/* redes sociales  */
+
+/* nav-categorias */
+
 .nav{
     display: flex;
     border-bottom: 0px solid #aaa;
-    background : #f5f5f5; 
+    background : black; 
     padding: 0px;
-
-
 }
 
 .nav .categorias a {
- color: #494949;
+ color: white;
  padding:8px;
  font-family: Comfortaa;
 }
+.nav .categorias a:hover{
+ background: gray;
+ font-family: Comfortaa;
+
+}
+/* nav-categorias */
+
+
+
+/* productos */ 
+
+
+
+.producto {
+    background: white;
+    padding: 5px 10px;
+    border: 10px;
+    flex: 1 1 auto;
+}
+
+
+h3 {
+    color: #696969;
+    font-weight: bold;
+    text-transform: none;
+    text-align: center;
+}
+
+.listaProductos {
+    display: flex;
+}
+
+/* footer */ 
+
+footer {
+    background: black;
+    color: white;
+}
+
+h5 {
+    color: white;
+}
+
+/* fin fotter * /
+
+
+/* mediaQ */
+
+@media screen and (max-width:768px){
+    .redes , .buscador {
+        display: none;
+        
+    }
+    #boton-buscador2 {
+      display: inline;
+      color: white;
+      font-size: 2rem;
+    }
+    
+
+}
+
+@media screen and (max-width:1024px){
+     .redes , .buscador {
+        display: none;
+    }
+    #boton-buscador2 {
+        display: inline;
+        color: white;
+        font-size: 1.5rem;
+      }
+    .nav {
+        display:none;
+    }
+}
+
+@media screen and (max-width:400px){
+    .boton{
+       display: none;
+       
+   }
+   #boton-buscador2{
+    font-size: 1.5rem;
+   }
+}
+
+@media screen and (max-width:275px){
+
+   #boton-buscador2{
+       display: none;
+   }
+}
+
+
