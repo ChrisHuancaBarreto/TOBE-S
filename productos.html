@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Tobe's</title>
+    <title>Mexus</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -16,385 +16,327 @@
 </head>
 <body>
 
-
 <header class="header navbar sticky-top">
-    <div class="logo">
-        <a class="hvr-wobble-to-bottom-right" href="index.html"><h1>TOBE'S</h1></a>
-    </div>    
-    <div class="buscador">
-        <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Buscar..." aria-label="Search">
-            <button id="boton-buscador" class="btn btn-outline my-2 my-sm-0 hvr-grow-shadow" type="submit"><i class="fas fa-search"></i></button>
-        </form>
-    </div>
-
-    <div class="dropdown">
-            <button class="dropdown-toggle ingresar hvr-bounce-in boton"  type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <h5><i class="fas fa-user"></i> Acceder</h5>
-            </button>
-            <div class="dropdown-menu" style="background: black;" aria-labelledby="dropdownMenuButton" >
-              <a class="dropdown-item" data-toggle="modal" data-target="#login" style="color: white;background: transparent;" href="#">Iniciar Sesion</a>
-              <a class="dropdown-item" style="color:white; background: transparent;" href="register.html">Registrarse</a>
-            </div>
-    </div>
-
-
-    <!-- LOGIN - MODAL -->
-
-    <div class="modal fade" tabindex="-1" role="dialog" id="login" aria-labelledby="login">
-            <div class="modal-dialog" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" style="color:black">Iniciar Sesion</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
+                <div class="logo">
+                    <a class="hvr-wobble-to-bottom-right" href="index.html"><h1>MeXus</h1></a>
+                </div>    
+                <div class="buscador">
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Buscar..." aria-label="Search">
+                        <button id="boton-buscador" class="btn btn-outline my-2 my-sm-0 hvr-grow-shadow" type="submit"><i class="fas fa-search"></i></button>
+                    </form>
                 </div>
-                <div class="modal-body">
-            <form>
-            <div class="form-group">
-              <label for="email">Ingrese su correo</label>
-              <input type="email" class="form-control" id="email" placeholder="Ingrese su email..">
-            </div>
-            <div class="form-group">
-              <label for="pass">Contraseña</label>
-              <input type="password" class="form-control" id="pass" placeholder="contraseña..">
-            </div>
-            <div class="form-group form-check">
-              <input type="checkbox" class="form-check-input" id="recordar">
-              <label class="form-check-label" for="recordar">Recordar</label>
-            </div>
-          </form>
+            
+               <div class="dropdown">
+                        <button class="dropdown-toggle ingresar hvr-bounce-in boton"  type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <h5><i class="fas fa-user"></i> Acceder</h5>
+                        </button>
+                        <div class="dropdown-menu" style="background: black;z-index: auto;" aria-labelledby="dropdownMenuButton" >
+                          <a class="dropdown-item" data-toggle="modal" data-target="#login" style="color: white;background: transparent;" href="#">Iniciar Sesion</a>
+                          <a class="dropdown-item" style="color:white; background: transparent;" href="register.html">Registrarse</a>
+                        </div>
                 </div>
-                <div class="modal-footer">
-                  <a href="login.html"><button type="submit" class="btn btn-success">Registrarse</button></a>
-                  <button type="submit" class="btn btn-primary">Ingresar</button>
+            
+            
+                <!-- LOGIN - MODAL -->
+            
+                <div class="modal fade" tabindex="-1" role="dialog" id="login" aria-labelledby="login">
+                        <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" style="color:black">Iniciar Sesion</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                        <form>
+                        <div class="form-group">
+                          <label for="email">Ingrese su correo</label>
+                          <input type="email" class="form-control" id="email" placeholder="Ingrese su email..">
+                        </div>
+                        <div class="form-group">
+                          <label for="pass">Contraseña</label>
+                          <input type="password" class="form-control" id="pass" placeholder="contraseña..">
+                        </div>
+                        <div class="form-group form-check">
+                          <input type="checkbox" class="form-check-input" id="recordar">
+                          <label class="form-check-label" for="recordar">Recordar</label>
+                        </div>
+                      </form>
+                            </div>
+                            <div class="modal-footer">
+                              <a href="login.html"><button type="submit" class="btn btn-success">Registrarse</button></a>
+                              <button type="submit" class="btn btn-primary">Ingresar</button>
+                            </div>
+                          </div>
+                        </div>
                 </div>
-              </div>
-            </div>
-    </div>
-
-    <!-- LOGIN - MODAL -->
-
-
-  <button id="boton-buscador2" class="btn btn-outline my-2 my-sm-0 hvr-grow-shadow" type="submit"><i class="fas fa-search"></i></button>
-    <div class="redes">
-      <a href="#"><i class="fab fa-facebook hvr-float"></i></a>
-      <a href="#"><i class="fab fa-twitter hvr-float"></i></a>
-      <a href="#"><i class="fab fa-instagram hvr-float"></i></a>
-      <div style="color: white;font-size: 28px;">|</div>
-      <a href="#"><i class="fa fa-shopping-cart hvr-float"></i></a>
-    </div>
+            
+                <!-- LOGIN - MODAL -->
+            
+            
+              <button id="boton-buscador2" class="btn btn-outline my-2 my-sm-0 hvr-grow-shadow" type="submit"><i class="fas fa-search"></i></button>
+                <div class="redes">
+                  <a href="#"><i class="fab fa-facebook hvr-float"></i></a>
+                  <a href="#"><i class="fab fa-twitter hvr-float"></i></a>
+                  <a href="#"><i class="fab fa-instagram hvr-float"></i></a>
+                  <div style="color: white;font-size: 28px;">|</div>
+                  <a href="#"><i class="fa fa-shopping-cart hvr-float data-toggle="tooltip" data-placement="left" title="Debe iniciar sesion"></i></a>
+                </div>
 </header>
 
-<nav class="nav">
+<nav class="nav" style="z-index: auto;">
         <div class="categorias">
-            <a class="hvr-float" href="productos.html">Computadoras</a>
-            <a class="hvr-float" href="productos.html">Consolas</a>
-            <a class="hvr-float" href="productos.html">Electrodomesticos</a>
-            <a class="hvr-float" href="productos.html">Celulares</a>
+            <a class="hvr-float" href="productos.html#Computadoras">Computadoras</a>
+            <a class="hvr-float" href="productos.html#Consolas">Consolas</a>
+            <a class="hvr-float" href="productos.html#Televisores">televisores</a>
+            <a class="hvr-float" href="productos.html#Celulares">Celulares</a>
         </div>
 </nav>
-
-
+    
 
 <section>
-<div class="container-fluid listaProductos">    
+ <!-- PRODUCTOS ---------------------------------------------------------------->
+
+<!-- Computadoras-->
+<div class="container-fluid listaProductos">
+    <a name="Computadoras"></a>    
     <div class="row">
       <div class="col-sm-6 col-md-3 producto">
             <div class="card" style="width: auto;">
-                    <img src="img/1000x1000_1.jpg" class="card-img-top" alt="foto-producto">
+                    <img src="img/productos/pc1.jpg" class="card-img-top hvr-bounce-in" alt="foto-producto">
                     <div class="card-body">
-                      <h5 class="card-title">Nombre Del Producto</h5>
-                      <p class="card-text">Descripcion del producto</p>
+                      <h5 class="card-title">Computadora</h5>
+                      <h3 style="background: transparent;color: blue;">$45.000</h3>
+                      <p class="card-text">Pc Armada Intel I7 8700 Ddr4 8g 1tb Gtx 1650 4gb Gamer Win10</p>
                       <a href="#" class="btn btn-primary">Comprar</a>
                       <a href="#" class="btn btn-primary">Ver</a>
-                      <a href="#" class="btn btn-primary">Add</a>
                     </div>
              </div>
       </div>
       <div class="col-sm-6 col-md-3 producto">
             <div class="card" style="width: auto;">
-                    <img src="img/1000x1000_1.jpg" class="card-img-top" alt="foto-producto">
+                    <img src="img/productos/pc1.jpg" class="card-img-top hvr-bounce-in" alt="foto-producto">
                     <div class="card-body">
-                      <h5 class="card-title">Nombre Del Producto</h5>
-                      <p class="card-text">Descripcion del producto</p>
+                      <h5 class="card-title">Computadora</h5>
+                      <h3 style="background: transparent;color: blue;">$45.000</h3>
+                      <p class="card-text">Pc Armada Intel I7 8700 Ddr4 8g 1tb Gtx 1650 4gb Gamer Win10</p>
                       <a href="#" class="btn btn-primary">Comprar</a>
                       <a href="#" class="btn btn-primary">Ver</a>
-                      <a href="#" class="btn btn-primary">Add</a>
                     </div>
              </div>
       </div>
       <div class="col-sm-6 col-md-3 producto">
             <div class="card" style="width: auto;">
-                    <img src="img/1000x1000_1.jpg" class="card-img-top" alt="foto-producto">
+                    <img src="img/productos/pc1.jpg" class="card-img-top hvr-bounce-in" alt="foto-producto">
                     <div class="card-body">
-                      <h5 class="card-title">Nombre Del Producto</h5>
-                      <p class="card-text">Descripcion del producto</p>
+                      <h5 class="card-title">Computadora</h5>
+                      <h3 style="background: transparent;color: blue;">$45.000</h3>
+                      <p class="card-text">Pc Armada Intel I7 8700 Ddr4 8g 1tb Gtx 1650 4gb Gamer Win10</p>
                       <a href="#" class="btn btn-primary">Comprar</a>
                       <a href="#" class="btn btn-primary">Ver</a>
-                      <a href="#" class="btn btn-primary">Add</a>
                     </div>
              </div>
       </div>
       <div class="col-sm-6 col-md-3 producto">
             <div class="card" style="width: auto;">
-                    <img src="img/1000x1000_1.jpg" class="card-img-top" alt="foto-producto">
+                    <img src="img/productos/pc1.jpg" class="card-img-top hvr-bounce-in" alt="foto-producto">
                     <div class="card-body">
-                      <h5 class="card-title">Nombre Del Producto</h5>
-                      <p class="card-text">Descripcion del producto</p>
+                      <h5 class="card-title">Computadora</h5>
+                      <h3 style="background: transparent;color: blue;">$45.000</h3>
+                      <p class="card-text">Pc Armada Intel I7 8700 Ddr4 8g 1tb Gtx 1650 4gb Gamer Win10</p>
                       <a href="#" class="btn btn-primary">Comprar</a>
                       <a href="#" class="btn btn-primary">Ver</a>
-                      <a href="#" class="btn btn-primary">Add</a>
                     </div>
              </div>
       </div>
     </div>
 
 </div>
+<!-- /Computadoras-->
 
-
-
-</section>
-<section>
-        <div class="container-fluid listaProductos">    
-            <div class="row">
-              <div class="col-sm-6 col-md-3 producto">
-                    <div class="card" style="width: auto;">
-                            <img src="img/1000x1000_1.jpg" class="card-img-top" alt="foto-producto">
-                            <div class="card-body">
-                              <h5 class="card-title">Nombre Del Producto</h5>
-                              <p class="card-text">Descripcion del producto</p>
-                              <a href="#" class="btn btn-primary">Comprar</a>
-                              <a href="#" class="btn btn-primary">Ver</a>
-                              <a href="#" class="btn btn-primary">Add</a>
-                            </div>
-                     </div>
-              </div>
-              <div class="col-sm-6 col-md-3 producto">
-                    <div class="card" style="width: auto;">
-                            <img src="img/1000x1000_1.jpg" class="card-img-top" alt="foto-producto">
-                            <div class="card-body">
-                              <h5 class="card-title">Nombre Del Producto</h5>
-                              <p class="card-text">Descripcion del producto</p>
-                              <a href="#" class="btn btn-primary">Comprar</a>
-                              <a href="#" class="btn btn-primary">Ver</a>
-                              <a href="#" class="btn btn-primary">Add</a>
-                            </div>
-                     </div>
-              </div>
-              <div class="col-sm-6 col-md-3 producto">
-                    <div class="card" style="width: auto;">
-                            <img src="img/1000x1000_1.jpg" class="card-img-top" alt="foto-producto">
-                            <div class="card-body">
-                              <h5 class="card-title">Nombre Del Producto</h5>
-                              <p class="card-text">Descripcion del producto</p>
-                              <a href="#" class="btn btn-primary">Comprar</a>
-                              <a href="#" class="btn btn-primary">Ver</a>
-                              <a href="#" class="btn btn-primary">Add</a>
-                            </div>
-                     </div>
-              </div>
-              <div class="col-sm-6 col-md-3 producto">
-                    <div class="card" style="width: auto;">
-                            <img src="img/1000x1000_1.jpg" class="card-img-top" alt="foto-producto">
-                            <div class="card-body">
-                              <h5 class="card-title">Nombre Del Producto</h5>
-                              <p class="card-text">Descripcion del producto</p>
-                              <a href="#" class="btn btn-primary">Comprar</a>
-                              <a href="#" class="btn btn-primary">Ver</a>
-                              <a href="#" class="btn btn-primary">Add</a>
-                            </div>
-                     </div>
-              </div>
-            </div>
-        
-        </div>
-        
-        
-        
-</section>
-<section>
-                <div class="container-fluid listaProductos">    
-                    <div class="row">
-                      <div class="col-sm-6 col-md-3 producto">
-                            <div class="card" style="width: auto;">
-                                    <img src="img/1000x1000_1.jpg" class="card-img-top" alt="foto-producto">
-                                    <div class="card-body">
-                                      <h5 class="card-title">Nombre Del Producto</h5>
-                                      <p class="card-text">Descripcion del producto</p>
-                                      <a href="#" class="btn btn-primary">Comprar</a>
-                                      <a href="#" class="btn btn-primary">Ver</a>
-                                      <a href="#" class="btn btn-primary">Add</a>
-                                    </div>
-                             </div>
-                      </div>
-                      <div class="col-sm-6 col-md-3 producto">
-                            <div class="card" style="width: auto;">
-                                    <img src="img/1000x1000_1.jpg" class="card-img-top" alt="foto-producto">
-                                    <div class="card-body">
-                                      <h5 class="card-title">Nombre Del Producto</h5>
-                                      <p class="card-text">Descripcion del producto</p>
-                                      <a href="#" class="btn btn-primary">Comprar</a>
-                                      <a href="#" class="btn btn-primary">Ver</a>
-                                      <a href="#" class="btn btn-primary">Add</a>
-                                    </div>
-                             </div>
-                      </div>
-                      <div class="col-sm-6 col-md-3 producto">
-                            <div class="card" style="width: auto;">
-                                    <img src="img/1000x1000_1.jpg" class="card-img-top" alt="foto-producto">
-                                    <div class="card-body">
-                                      <h5 class="card-title">Nombre Del Producto</h5>
-                                      <p class="card-text">Descripcion del producto</p>
-                                      <a href="#" class="btn btn-primary">Comprar</a>
-                                      <a href="#" class="btn btn-primary">Ver</a>
-                                      <a href="#" class="btn btn-primary">Add</a>
-                                    </div>
-                             </div>
-                      </div>
-                      <div class="col-sm-6 col-md-3 producto">
-                            <div class="card" style="width: auto;">
-                                    <img src="img/1000x1000_1.jpg" class="card-img-top" alt="foto-producto">
-                                    <div class="card-body">
-                                      <h5 class="card-title">Nombre Del Producto</h5>
-                                      <p class="card-text">Descripcion del producto</p>
-                                      <a href="#" class="btn btn-primary">Comprar</a>
-                                      <a href="#" class="btn btn-primary">Ver</a>
-                                      <a href="#" class="btn btn-primary">Add</a>
-                                    </div>
-                             </div>
-                      </div>
-                    </div>
-                
-                </div>
-                
-                
-                
-</section>
-<section>
-                        <div class="container-fluid listaProductos">    
-                            <div class="row">
-                              <div class="col-sm-6 col-md-3 producto">
-                                    <div class="card" style="width: auto;">
-                                            <img src="img/1000x1000_1.jpg" class="card-img-top" alt="foto-producto">
-                                            <div class="card-body">
-                                              <h5 class="card-title">Nombre Del Producto</h5>
-                                              <p class="card-text">Descripcion del producto</p>
-                                              <a href="#" class="btn btn-primary">Comprar</a>
-                                              <a href="#" class="btn btn-primary">Ver</a>
-                                              <a href="#" class="btn btn-primary">Add</a>
-                                            </div>
-                                     </div>
-                              </div>
-                              <div class="col-sm-6 col-md-3 producto">
-                                    <div class="card" style="width: auto;">
-                                            <img src="img/1000x1000_1.jpg" class="card-img-top" alt="foto-producto">
-                                            <div class="card-body">
-                                              <h5 class="card-title">Nombre Del Producto</h5>
-                                              <p class="card-text">Descripcion del producto</p>
-                                              <a href="#" class="btn btn-primary">Comprar</a>
-                                              <a href="#" class="btn btn-primary">Ver</a>
-                                              <a href="#" class="btn btn-primary">Add</a>
-                                            </div>
-                                     </div>
-                              </div>
-                              <div class="col-sm-6 col-md-3 producto">
-                                    <div class="card" style="width: auto;">
-                                            <img src="img/1000x1000_1.jpg" class="card-img-top" alt="foto-producto">
-                                            <div class="card-body">
-                                              <h5 class="card-title">Nombre Del Producto</h5>
-                                              <p class="card-text">Descripcion del producto</p>
-                                              <a href="#" class="btn btn-primary">Comprar</a>
-                                              <a href="#" class="btn btn-primary">Ver</a>
-                                              <a href="#" class="btn btn-primary">Add</a>
-                                            </div>
-                                     </div>
-                              </div>
-                              <div class="col-sm-6 col-md-3 producto">
-                                    <div class="card" style="width: auto;">
-                                            <img src="img/1000x1000_1.jpg" class="card-img-top" alt="foto-producto">
-                                            <div class="card-body">
-                                              <h5 class="card-title">Nombre Del Producto</h5>
-                                              <p class="card-text">Descripcion del producto</p>
-                                              <a href="#" class="btn btn-primary">Comprar</a>
-                                              <a href="#" class="btn btn-primary">Ver</a>
-                                              <a href="#" class="btn btn-primary">Add</a>
-                                            </div>
-                                     </div>
-                              </div>
-                            </div>
-                        
+<!-- Consolas -->
+<div class="container-fluid listaProductos">
+    <a name="Consolas"></a>    
+        <div class="row">
+          <div class="col-sm-6 col-md-3 producto">
+                <div class="card" style="width: auto;">
+                        <img src="img/productos/consola.png" class="card-img-top hvr-bounce-in" alt="foto-producto">
+                        <div class="card-body">
+                          <h5 class="card-title">Computadora</h5>
+                          <h3 style="background: transparent;color: blue;">$45.000</h3>
+                          <p class="card-text">Pc Armada Intel I7 8700 Ddr4 8g 1tb Gtx 1650 4gb Gamer Win10</p>
+                          <a href="#" class="btn btn-primary">Comprar</a>
+                          <a href="#" class="btn btn-primary">Ver</a>
                         </div>
-                        
-                        
-                        
-</section>
-<section>
-                                <div class="container-fluid listaProductos">    
-                                    <div class="row">
-                                      <div class="col-sm-6 col-md-3 producto">
-                                            <div class="card" style="width: auto;">
-                                                    <img src="img/1000x1000_1.jpg" class="card-img-top" alt="foto-producto">
-                                                    <div class="card-body">
-                                                      <h5 class="card-title">Nombre Del Producto</h5>
-                                                      <p class="card-text">Descripcion del producto</p>
-                                                      <a href="#" class="btn btn-primary">Comprar</a>
-                                                      <a href="#" class="btn btn-primary">Ver</a>
-                                                      <a href="#" class="btn btn-primary">Add</a>
-                                                    </div>
-                                             </div>
-                                      </div>
-                                      <div class="col-sm-6 col-md-3 producto">
-                                            <div class="card" style="width: auto;">
-                                                    <img src="img/1000x1000_1.jpg" class="card-img-top" alt="foto-producto">
-                                                    <div class="card-body">
-                                                      <h5 class="card-title">Nombre Del Producto</h5>
-                                                      <p class="card-text">Descripcion del producto</p>
-                                                      <a href="#" class="btn btn-primary">Comprar</a>
-                                                      <a href="#" class="btn btn-primary">Ver</a>
-                                                      <a href="#" class="btn btn-primary">Add</a>
-                                                    </div>
-                                             </div>
-                                      </div>
-                                      <div class="col-sm-6 col-md-3 producto">
-                                            <div class="card" style="width: auto;">
-                                                    <img src="img/1000x1000_1.jpg" class="card-img-top" alt="foto-producto">
-                                                    <div class="card-body">
-                                                      <h5 class="card-title">Nombre Del Producto</h5>
-                                                      <p class="card-text">Descripcion del producto</p>
-                                                      <a href="#" class="btn btn-primary">Comprar</a>
-                                                      <a href="#" class="btn btn-primary">Ver</a>
-                                                      <a href="#" class="btn btn-primary">Add</a>
-                                                    </div>
-                                             </div>
-                                      </div>
-                                      <div class="col-sm-6 col-md-3 producto">
-                                            <div class="card" style="width: auto;">
-                                                    <img src="img/1000x1000_1.jpg" class="card-img-top" alt="foto-producto">
-                                                    <div class="card-body">
-                                                      <h5 class="card-title">Nombre Del Producto</h5>
-                                                      <p class="card-text">Descripcion del producto</p>
-                                                      <a href="#" class="btn btn-primary">Comprar</a>
-                                                      <a href="#" class="btn btn-primary">Ver</a>
-                                                      <a href="#" class="btn btn-primary">Add</a>
-                                                    </div>
-                                             </div>
-                                      </div>
-                                    </div>
-                                
-                                </div>
-                                
-                                
-                                
+                 </div>
+          </div>
+          <div class="col-sm-6 col-md-3 producto">
+                <div class="card" style="width: auto;">
+                        <img src="img/productos/consola.png" class="card-img-top hvr-bounce-in" alt="foto-producto">
+                        <div class="card-body">
+                          <h5 class="card-title">Computadora</h5>
+                          <h3 style="background: transparent;color: blue;">$45.000</h3>
+                          <p class="card-text">Pc Armada Intel I7 8700 Ddr4 8g 1tb Gtx 1650 4gb Gamer Win10</p>
+                          <a href="#" class="btn btn-primary">Comprar</a>
+                          <a href="#" class="btn btn-primary">Ver</a>
+                        </div>
+                 </div>
+          </div>
+          <div class="col-sm-6 col-md-3 producto">
+                <div class="card" style="width: auto;">
+                        <img src="img/productos/consola.png" class="card-img-top hvr-bounce-in" alt="foto-producto">
+                        <div class="card-body">
+                          <h5 class="card-title">Computadora</h5>
+                          <h3 style="background: transparent;color: blue;">$45.000</h3>
+                          <p class="card-text">Pc Armada Intel I7 8700 Ddr4 8g 1tb Gtx 1650 4gb Gamer Win10</p>
+                          <a href="#" class="btn btn-primary">Comprar</a>
+                          <a href="#" class="btn btn-primary">Ver</a>
+                        </div>
+                 </div>
+          </div>
+          <div class="col-sm-6 col-md-3 producto">
+                <div class="card" style="width: auto;">
+                        <img src="img/productos/consola.png" class="card-img-top hvr-bounce-in" alt="foto-producto">
+                        <div class="card-body">
+                          <h5 class="card-title">Computadora</h5>
+                          <h3 style="background: transparent;color: blue;">$45.000</h3>
+                          <p class="card-text">Pc Armada Intel I7 8700 Ddr4 8g 1tb Gtx 1650 4gb Gamer Win10</p>
+                          <a href="#" class="btn btn-primary">Comprar</a>
+                          <a href="#" class="btn btn-primary">Ver</a>
+                        </div>
+                 </div>
+          </div>
+        </div>
+    
+</div>
+<!-- /Consolas -->
+
+<!-- Televisores -->
+<div class="container-fluid listaProductos">
+       <a name="Televisores"></a>    
+        <div class="row">
+          <div class="col-sm-6 col-md-3 producto">
+                <div class="card" style="width: auto;">
+                        <img src="img/tv.png" class="card-img-top hvr-bounce-in" alt="foto-producto">
+                        <div class="card-body">
+                          <h5 class="card-title">Computadora</h5>
+                          <h3 style="background: transparent;color: blue;">$45.000</h3>
+                          <p class="card-text">Pc Armada Intel I7 8700 Ddr4 8g 1tb Gtx 1650 4gb Gamer Win10</p>
+                          <a href="#" class="btn btn-primary">Comprar</a>
+                          <a href="#" class="btn btn-primary">Ver</a>
+                        </div>
+                 </div>
+          </div>
+          <div class="col-sm-6 col-md-3 producto">
+                <div class="card" style="width: auto;">
+                        <img src="img/tv.png" class="card-img-top hvr-bounce-in" alt="foto-producto">
+                        <div class="card-body">
+                          <h5 class="card-title">Computadora</h5>
+                          <h3 style="background: transparent;color: blue;">$45.000</h3>
+                          <p class="card-text">Pc Armada Intel I7 8700 Ddr4 8g 1tb Gtx 1650 4gb Gamer Win10</p>
+                          <a href="#" class="btn btn-primary">Comprar</a>
+                          <a href="#" class="btn btn-primary">Ver</a>
+                        </div>
+                 </div>
+          </div>
+          <div class="col-sm-6 col-md-3 producto">
+                <div class="card" style="width: auto;">
+                        <img src="img/tv.png" class="card-img-top hvr-bounce-in" alt="foto-producto">
+                        <div class="card-body">
+                          <h5 class="card-title">Computadora</h5>
+                          <h3 style="background: transparent;color: blue;">$45.000</h3>
+                          <p class="card-text">Pc Armada Intel I7 8700 Ddr4 8g 1tb Gtx 1650 4gb Gamer Win10</p>
+                          <a href="#" class="btn btn-primary">Comprar</a>
+                          <a href="#" class="btn btn-primary">Ver</a>
+                        </div>
+                 </div>
+          </div>
+          <div class="col-sm-6 col-md-3 producto">
+                <div class="card" style="width: auto;">
+                        <img src="img/tv.png" class="card-img-top hvr-bounce-in" alt="foto-producto">
+                        <div class="card-body">
+                          <h5 class="card-title">Computadora</h5>
+                          <h3 style="background: transparent;color: blue;">$45.000</h3>
+                          <p class="card-text">Pc Armada Intel I7 8700 Ddr4 8g 1tb Gtx 1650 4gb Gamer Win10</p>
+                          <a href="#" class="btn btn-primary">Comprar</a>
+                          <a href="#" class="btn btn-primary">Ver</a>
+                        </div>
+                 </div>
+          </div>
+        </div>
+    
+</div>
+<!-- /Televisores -->
+
+<!-- Celulares -->
+<div class="container-fluid listaProductos">   
+        <a name="Celulares"></a>   
+        <div class="row">
+          <div class="col-sm-6 col-md-3 producto">
+                <div class="card" style="width: auto;">
+                        <img src="img/productos/celular1.png" class="card-img-top hvr-bounce-in" alt="foto-producto">
+                        <div class="card-body">
+                          <h5 class="card-title">Computadora</h5>
+                          <h3 style="background: transparent;color: blue;">$45.000</h3>
+                          <p class="card-text">Pc Armada Intel I7 8700 Ddr4 8g 1tb Gtx 1650 4gb Gamer Win10</p>
+                          <a href="#" class="btn btn-primary">Comprar</a>
+                          <a href="#" class="btn btn-primary">Ver</a>
+                        </div>
+                 </div>
+          </div>
+          <div class="col-sm-6 col-md-3 producto">
+                <div class="card" style="width: auto;">
+                        <img src="img/productos/celular1.png" class="card-img-top hvr-bounce-in" alt="foto-producto">
+                        <div class="card-body">
+                          <h5 class="card-title">Computadora</h5>
+                          <h3 style="background: transparent;color: blue;">$45.000</h3>
+                          <p class="card-text">Pc Armada Intel I7 8700 Ddr4 8g 1tb Gtx 1650 4gb Gamer Win10</p>
+                          <a href="#" class="btn btn-primary">Comprar</a>
+                          <a href="#" class="btn btn-primary">Ver</a>
+                        </div>
+                 </div>
+          </div>
+          <div class="col-sm-6 col-md-3 producto">
+                <div class="card" style="width: auto;">
+                        <img src="img/productos/celular1.png" class="card-img-top hvr-bounce-in" alt="foto-producto">
+                        <div class="card-body">
+                          <h5 class="card-title">Computadora</h5>
+                          <h3 style="background: transparent;color: blue;">$45.000</h3>
+                          <p class="card-text">Pc Armada Intel I7 8700 Ddr4 8g 1tb Gtx 1650 4gb Gamer Win10</p>
+                          <a href="#" class="btn btn-primary">Comprar</a>
+                          <a href="#" class="btn btn-primary">Ver</a>
+                        </div>
+                 </div>
+          </div>
+          <div class="col-sm-6 col-md-3 producto">
+                <div class="card" style="width: auto;">
+                        <img src="img/productos/celular1.png" class="card-img-top hvr-bounce-in" alt="foto-producto">
+                        <div class="card-body">
+                          <h5 class="card-title">Computadora</h5>
+                          <h3 style="background: transparent;color: blue;">$45.000</h3>
+                          <p class="card-text">Pc Armada Intel I7 8700 Ddr4 8g 1tb Gtx 1650 4gb Gamer Win10</p>
+                          <a href="#" class="btn btn-primary">Comprar</a>
+                          <a href="#" class="btn btn-primary">Ver</a>
+                        </div>
+                 </div>
+          </div>
+        </div>
+    
+</div>
+<!-- /Celulares -->
+
+ <!-- /PRODUCTOS ---------------------------------------------------------------->
 </section>
 
+
+<!-- footer -->
 <footer>
-
-      <div class="container-fluid">
-        <div class="row" style="text-align: center;" >
+<div class="container-fluid" >
+        <div class="row" style="text-align: center;padding: 80px;" >
           <div class="col-md-4"> 
-              <h5>TOBE'S</h5>
+              <h5>MeXus</h5>
               <a href="nosotros.html#QuienesSomos">
                     <p>Quienes Somos?</p>
               </a>
@@ -426,11 +368,9 @@
                 <p><i class="fa fa-phone" aria-hidden="true"></i>  +54 12345678</p>
           </div>
         </div>
-      </div>
-
+</div>
 </footer>
-    
-
+<!-- /footer -->
 
 
 
