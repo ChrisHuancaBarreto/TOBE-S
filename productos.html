@@ -16,7 +16,7 @@
 </head>
 <body>
 
-<header class="header navbar sticky-top">
+<header class="header" style="z-index: auto;">
                 <div class="logo">
                     <a class="hvr-wobble-to-bottom-right" href="index.html"><h1>MeXus</h1></a>
                 </div>    
@@ -25,57 +25,7 @@
                         <input class="form-control mr-sm-2" type="search" placeholder="Buscar..." aria-label="Search">
                         <button id="boton-buscador" class="btn btn-outline my-2 my-sm-0 hvr-grow-shadow" type="submit"><i class="fas fa-search"></i></button>
                     </form>
-                </div>
-            
-               <div class="dropdown">
-                        <button class="dropdown-toggle ingresar hvr-bounce-in boton"  type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          <h5><i class="fas fa-user"></i> Acceder</h5>
-                        </button>
-                        <div class="dropdown-menu" style="background: black;z-index: auto;" aria-labelledby="dropdownMenuButton" >
-                          <a class="dropdown-item" data-toggle="modal" data-target="#login" style="color: white;background: transparent;" href="#">Iniciar Sesion</a>
-                          <a class="dropdown-item" style="color:white; background: transparent;" href="register.html">Registrarse</a>
-                        </div>
-                </div>
-            
-            
-                <!-- LOGIN - MODAL -->
-            
-                <div class="modal fade" tabindex="-1" role="dialog" id="login" aria-labelledby="login">
-                        <div class="modal-dialog" role="document">
-                          <div class="modal-content">
-                            <div class="modal-header">
-                              <h5 class="modal-title" style="color:black">Iniciar Sesion</h5>
-                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                              </button>
-                            </div>
-                            <div class="modal-body">
-                        <form>
-                        <div class="form-group">
-                          <label for="email">Ingrese su correo</label>
-                          <input type="email" class="form-control" id="email" placeholder="Ingrese su email..">
-                        </div>
-                        <div class="form-group">
-                          <label for="pass">Contraseña</label>
-                          <input type="password" class="form-control" id="pass" placeholder="contraseña..">
-                        </div>
-                        <div class="form-group form-check">
-                          <input type="checkbox" class="form-check-input" id="recordar">
-                          <label class="form-check-label" for="recordar">Recordar</label>
-                        </div>
-                      </form>
-                            </div>
-                            <div class="modal-footer">
-                              <a href="login.html"><button type="submit" class="btn btn-success">Registrarse</button></a>
-                              <button type="submit" class="btn btn-primary">Ingresar</button>
-                            </div>
-                          </div>
-                        </div>
-                </div>
-            
-                <!-- LOGIN - MODAL -->
-            
-            
+                </div>                       
               <button id="boton-buscador2" class="btn btn-outline my-2 my-sm-0 hvr-grow-shadow" type="submit"><i class="fas fa-search"></i></button>
                 <div class="redes">
                   <a href="#"><i class="fab fa-facebook hvr-float"></i></a>
@@ -86,19 +36,102 @@
                 </div>
 </header>
 
-<nav class="nav" style="z-index: auto;">
+<nav class="nav navbar sticky-top">
         <div class="categorias">
-            <a class="hvr-float" href="productos.html#Computadoras">Computadoras</a>
-            <a class="hvr-float" href="productos.html#Consolas">Consolas</a>
-            <a class="hvr-float" href="productos.html#Televisores">televisores</a>
-            <a class="hvr-float" href="productos.html#Celulares">Celulares</a>
+            <a href="index.html" class="hvr-float"><i class="fa fa-home hvr-icon"></i> Home</a>
+            <a class="hvr-float" href="productos.html#Computadoras"><i class="fas fa-desktop"></i> Computadoras</a>
+            <a class="hvr-float" href="productos.html#Consolas"><i class="fas fa-gamepad"></i> Consolas</a>
+            <a class="hvr-float" href="productos.html#Televisores"><i class="fas fa-tv"></i> televisores</a>
+            <a class="hvr-float" href="productos.html#Celulares"><i class="fas fa-mobile-alt"></i> Celulares</a>
+            <a href="nosotros.html" class="hvr-float"><i class="fa fa-smile-o hvr-icon"></i> Sobre Nosotros</a>
         </div>
+        <!-- Ingresar -->
+        <div class="dropdown">
+                <button class="dropdown-toggle ingresar hvr-bounce-in boton"  type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <h5><i class="fas fa-user"></i> Acceder</h5>
+                </button>
+                <div class="dropdown-menu" style="background: black;z-index: auto;" aria-labelledby="dropdownMenuButton" >
+                  <a class="dropdown-item" data-toggle="modal" data-target="#login" style="color: white;background: transparent;" href="#">Iniciar Sesion</a>
+                  <a class="dropdown-item" style="color:white; background: transparent;" href="register.html">Registrarse</a>
+                </div>
+        </div>
+        <!-- LOGIN - MODAL -->
+        <div class="modal fade" tabindex="-1" role="dialog" id="login" aria-labelledby="login">
+                                <div class="modal-dialog" role="document">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h5 class="modal-title" style="color:black">Iniciar Sesion</h5>
+                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                      </button>
+                                    </div>
+                                    <div class="modal-body">
+                                <form>
+                                <div class="form-group">
+                                  <label for="email">Ingrese su correo</label>
+                                  <input type="email" class="form-control" id="email" placeholder="Ingrese su email..">
+                                </div>
+                                <div class="form-group">
+                                  <label for="pass">Contraseña</label>
+                                  <input type="password" class="form-control" id="pass" placeholder="contraseña..">
+                                </div>
+                                <div class="form-group form-check">
+                                  <input type="checkbox" class="form-check-input" id="recordar">
+                                  <label class="form-check-label" for="recordar">Recordar</label>
+                                </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                      <a href="registere.html"><button type="submit" class="btn btn-success">Registrarse</button></a>
+                                      <button type="submit" class="btn btn-primary">Ingresar</button>
+                                    </div>
+                                </form>
+                                  </div>
+                                </div>
+        </div>
+        <!-- LOGIN - MODAL -->
+
+        <!-- / Ingresar -->
 </nav>
+
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style="z-index:auto">
+        <ol class="carousel-indicators" style="z-index:auto;">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div><img src="img/banner-productos/b1.png" class="d-block w-100" alt="banner_2"></div>
+          </div>
+          <div class="carousel-item">
+            <div><img src="img/banner-productos/b2.jpg" class="d-block w-100" alt="banner_3"></div>
+          </div>
+          <div class="carousel-item">
+            <div><img src="img/banner-productos/b3.jpg" class="d-block w-100" alt="banner_4"></div>
+          </div>
+          <div class="carousel-item">
+            <div><img src="img/banner-productos/b4.png" class="d-block w-100" alt="banner_5"></div>
+          </div>
+          <div><img src="img/banner-productos/b5.jpg" class="d-block w-100" alt="banner_2"></div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <button id="boton-carrusel" class="slick-prev slick-arrow" aria-label="Previous" type="button">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <button id="boton-carrusel" class="slick-next slick-arrow" aria-label="Next" type="button">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+            <span class="sr-only">Next</span>
+        </a>
+</div>
     
 
 <section>
  <!-- PRODUCTOS ---------------------------------------------------------------->
-
+ <h2>COMPUTADORAS </h2>
 <!-- Computadoras-->
 <div class="container-fluid listaProductos">
     <a name="Computadoras"></a>    
@@ -157,6 +190,7 @@
 <!-- /Computadoras-->
 
 <!-- Consolas -->
+<h2>CONSOLAS </h2>
 <div class="container-fluid listaProductos">
     <a name="Consolas"></a>    
         <div class="row">
@@ -214,6 +248,7 @@
 <!-- /Consolas -->
 
 <!-- Televisores -->
+<h2>TELEVISORES </h2>
 <div class="container-fluid listaProductos">
        <a name="Televisores"></a>    
         <div class="row">
@@ -271,6 +306,7 @@
 <!-- /Televisores -->
 
 <!-- Celulares -->
+<h2>CELULARES </h2>
 <div class="container-fluid listaProductos">   
         <a name="Celulares"></a>   
         <div class="row">
@@ -333,43 +369,43 @@
 
 <!-- footer -->
 <footer>
-<div class="container-fluid" >
-        <div class="row" style="text-align: center;padding: 80px;" >
-          <div class="col-md-4"> 
-              <h5>MeXus</h5>
-              <a href="nosotros.html#QuienesSomos">
-                    <p>Quienes Somos?</p>
-              </a>
-              <a href="nosotros.html#dondeEstamos">
-                  <p>Donde Estamos?</p>
-              </a>
-              <a href="nosotros.html#dondeEstamos">
-                    <p>Contacto</p>
-              </a>
-          </div>
-
-          <div class="col-md-4" >
-                <h5 class="title">Recibir Novedades</h5>
-                <form>
-                    <div class="form-group">
-                        <label for="email">Deje su correo: </label>
-                          <input type="email" class="form-control" id="email" placeholder="Ingrese su email">
-                    </div>
-                    <button type="submit" class="btn btn-primary">Enviar</button>
-                </form>
-
-          </div>
-
-          <div class="col-md-4" >
-              <h5>Contacto</h5>
-                <p>MeXus</p>
-                <p><i class="fa fa-map-marker" aria-hidden="true"></i>  Calle falsa 1234</p>
-                <p>  unEmail@algo.com</p>
-                <p><i class="fa fa-phone" aria-hidden="true"></i>  +54 12345678</p>
-          </div>
+        <div class="container-fluid" >
+                <div class="row" style="text-align: center;padding: 80px;" >
+                  <div class="col-md-4"> 
+                      <h5>MeXus</h5>
+                      <a href="nosotros.html#QuienesSomos">
+                            <p>Quienes Somos?</p>
+                      </a>
+                      <a href="nosotros.html#Ayuda">
+                          <p>Ayuda</p>
+                      </a>
+                      <a href="nosotros.html#dondeEstamos">
+                            <p>Contacto</p>
+                      </a>
+                  </div>
+        
+                  <div class="col-md-4" >
+                        <h5 class="title">Recibir Novedades</h5>
+                        <form>
+                            <div class="form-group">
+                                <label for="email">Deje su correo: </label>
+                                  <input type="email" class="form-control" id="email" placeholder="Ingrese su email">
+                            </div>
+                            <button type="submit" class="btn btn-primary">Enviar</button>
+                        </form>
+        
+                  </div>
+        
+                  <div class="col-md-4" >
+                      <h5>Contacto</h5>
+                        <p>MeXus</p>
+                        <p><i class="fa fa-map-marker" aria-hidden="true"></i>  Calle falsa 1234</p>
+                        <p>  MeXusAr@mexus.com</p>
+                        <p><i class="fa fa-phone" aria-hidden="true"></i>  +54 12345678</p>
+                  </div>
+                </div>
         </div>
-</div>
-</footer>
+    </footer>
 <!-- /footer -->
 
 

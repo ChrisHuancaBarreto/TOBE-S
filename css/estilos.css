@@ -128,13 +128,20 @@ a:hover {
  font-family: Comfortaa;
 
 }
+
+h2 {
+    background: black;
+    color:white;
+    text-align: center;
+    margin-top:30px;
+    margin-bottom: 30px;
+    font-family: 'Permanent Marker', cursive;    
+}
 /* nav-categorias */
 
 
 
 /* productos */ 
-
-
 
 .producto {
     background: white;
